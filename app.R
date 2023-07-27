@@ -1,12 +1,12 @@
-library(plotly)
-library(shiny)
-library(rsconnect)
-library(ggplot2)
-library(plotly)
-library(shiny)
-library(tidyverse)
-library(readxl)
-library(openxlsx)
+librarian::shelf(kableExtra,knitr,summarytools,fastDummies, plotly, patchwork,cowplot, bookdown, purrr, forcats, anytime, tidyverse,stringi, remotes, gdata , readxlsb, scales,stringr, stringdist,tidytext, lubridate,writexl,readxl,openxlsx,gt, gtsummary)
+
+working_dir <- "C:/Users/T-ROEDERER/OneDrive - MSF/TR/Consult/RDC/Capitalisation 2020-2023"
+
+# Set the working directory to the "Analysis" folder
+setwd(working_dir)
+
+monthas <- read_excel(paste0(working_dir, "/Shiny apps/monthas.xlsx"), col_names = TRUE, sheet = 1)
+
 
 # Assuming your data frame is named vv2 and columns are named correctly
 # monthly_cases_as, n, as_nom, zs_nom, and Province
